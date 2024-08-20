@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote calculator</title>
+    <link rel="stylesheet" href="stylesjs.css/3-calculator.css">
+</head>
+<body>
+
+    <button id="btn" onclick="
+        calculation = '';
+        console.log(calculation)
+    ">AC</button>
+
+    <button id="btn" onclick="
+        calculation = calculation + '00';
+        console.log(calculation);
+    ">00</button>
+
+    <button id="btn" onclick="
+    calculation = calculation + '%';
+    console.log(calculation);
+    ">%</button>
+
+    <button id="btn-0" onclick="
+    calculation = calculation + '/';
+    console.log(calculation);
+    ">/</button><br><br>
+
+    <button id="btn-1" onclick="
+    calculation = calculation + '7';
+    console.log(calculation);
+    ">7</button>
+
+    <button id="btn-1" onclick="
+    calculation = calculation + '8';
+    console.log(calculation);
+    ">8</button>
+
+    <button id="btn-1" onclick="
+    calculation = calculation + '9';
+    console.log(calculation);
+    ">9</button>
+
+    <button id="btn-2" onclick="
+    calculation = calculation + '*';
+    console.log(calculation);
+    ">x</button><br><br>
+
+    <button id="btn-3" onclick="
+    calculation = calculation + '4';
+    console.log(calculation);
+    ">4</button>
+
+    <button id="btn-3" onclick="
+    calculation = calculation + '5';
+    console.log(calculation);
+    ">5</button>
+
+    <button id="btn-3" onclick="
+    calculation = calculation + '6';
+    console.log(calculation);
+    ">6</button>
+
+    <button id="btn-4" onclick="
+    calculation = calculation + '-';
+    console.log(calculation);
+    ">−</button><br><br>
+
+    <button id="btn-5" onclick="
+        calculation = calculation + '1';
+        console.log(calculation);
+    ">1</button>
+
+    <button id="btn-5" onclick="
+    calculation = calculation + '2';
+    console.log(calculation);
+    ">2</button>
+
+    <button id="btn-5" onclick="
+    calculation = calculation + '3';
+    console.log(calculation);
+    ">3</button>
+
+    <button id="btn-6" onclick="
+    calculation = calculation + ' + ';
+    console.log(calculation);
+    ">+</button><br><br>
+
+    <button id="btn-lg" onclick="
+    calculation = calculation + '0';
+    console.log(calculation);
+    ">0</button>
+
+    <button id="btn-7" onclick="
+    calculation = calculation + '.';
+    console.log(calculation);
+    ">.</button>
+
+    <button id="btn-8" onclick="
+    calculation = eval(calculation);
+    console.log(calculation);
+    calculation = '';
+    ">=</button>
+
+    <script>
+        let calculation = ''
+    </script>
+</body>
+</html>

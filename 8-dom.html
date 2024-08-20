@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+
+    <button class="test-btn">Test</button>
+    <div id="output"></div>
+
+    <script>
+        // document.title = "Hello,just testing"
+        // document.write("Hello, javascript working")
+        // document.body.innerHTML = "Still testing"
+
+        const divElement = document.getElementById("output")
+        console.log(divElement);
+
+        const testBtn = document.querySelector('.test-btn');
+        console.log(testBtn);
+
+        testBtn.style.color = 'red'
+        testBtn.style.backgroundColor = 'black'
+
+        const textNode = document.createTextNode("Hello testing");
+        const paraGraph = document.createElement('p');
+        paraGraph.appendChild(textNode);
+        divElement.appendChild(paraGraph);
+
+
+    </script>
+</body>
+</html>

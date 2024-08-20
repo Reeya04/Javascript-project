@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+
+    <div id="result"></div>
+
+    <script>
+        //base class
+        class Animals {
+            constructor(name, breed, sound, sex) {                
+                this.name = name;
+
+            }
+        }
+        
+        //Derived class
+        class Animal extends Animals{
+            constructor(name, breed, sound, sex) {
+                super (name);
+                this.breed = breed;
+                this.sound = sound;
+                this.sex = sex;
+            }
+            showAnimal() {
+                document.getElementById('result')
+                .innerHTML = `
+                Name: ${this.name} <br/>
+                Model: ${this.breed}<br/>
+                Engine: ${this.sound}<br/>
+                Color: ${this.sex}<br/> <br/>
+                This is Bingo, a male german-shepherd, and he barks a lot.
+                `
+            }
+        }
+        //Object: Instance of a new class
+        const Dog = new Animal("Bingo", "German-shepherd", "Bark", "Male");
+        Dog.showAnimal();
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans and If Statements</title>
+</head>
+<body>
+    = assignment operator; <br>
+    === strictly equal to <br>
+    > greater than <br>
+    < less than <br>
+    >= greater than or equal to <br>
+    <= less than or equal to <br>
+    && means the and operator <br>
+    || the Or operator <br>
+    if <br>
+    else if <br>
+    else <br>
+    switch <br>
+
+
+
+
+    <script>
+
+        // const level = 0; //truthy value;
+        // const age  = null; //falsy value;
+        // const userInfo = false; //falsy value;
+        // const userAge = true; //truthy value;
+        // const userLevel = undefined; //falsy value;
+        // const isNumber = NaN //falsy value;
+
+        // let name = "John"
+        // let amount = 10;
+
+        // if(amount <5){
+        //     console.log("name is a truthy value")
+        // }
+
+        // let level = 30;
+        // if(level > 10) {
+        //     console.log("Level is greater than 10");
+        // } 
+        // else if (level >= 10) {
+        //     console.log("Level is at least up to 10");
+        // }
+        // else{
+        //     console.log("Level is currently below 10")
+        // }
+
+        //let age = 40;
+        //switch (age){
+           // case age >= 40:
+            // console.log("Age is at 40");
+                //break;
+        //}
+
+        const age = 40;
+        const level = 30;
+        const trueResultText = "Age is greater than 30";
+        const falseResultText = "Age is not greater than 30";
+
+        //The AND operator
+        if(age > 40 && level < 40){
+            console.log("both booleans are true");
+        }
+        else{
+            console.log("either of the booleans could be false");
+        }
+        //The OR operator
+        if(age > 40 || level < 40){
+            console.log("At least one side of the condition is true");
+        }
+        else{
+            console.log("none of the conditions returned true")
+        }
+
+        //The Tenary operator
+        age > 30 ? console.log(trueResultText) : console.log(falseResultText)
+        
+        
+    </script>
+</body>
+</html>
